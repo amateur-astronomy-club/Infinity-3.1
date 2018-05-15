@@ -100,6 +100,12 @@ if __name__ == "__main__":
 	mode=GPIO.getmode()
 
 	GPIO.cleanup()
+
+
+	# p15 and p18 of R Pi is used for controlling all the 3 left motors using L293D motor driver
+	# p22 and p12 of R Pi is used for controlling all the 3 right motors using L293D motor driver
+	# 3 L293D motor drivers are used
+
 	
 	p15 = 22    #GPIO22
 	p18 = 24    #GPIO24
